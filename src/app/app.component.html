@@ -1,0 +1,32 @@
+<!-- text-interpolation -->
+<h1>{{title}}</h1>
+<h2>Hello {{name}}</h2>
+
+<!-- property-binding -->
+<img [src] ="image" alt="Nature Image" [width]="imageWidth" [height]="imageHeight" class="nature_img">
+
+
+<!-- attribute-binding -->
+<button class="sample_btn" type="button" [attr.aria-label]="attributeValue">Sample Button</button>
+
+<!-- class style binding -->
+<p [class.sample]="isSampleApplied">Class style binding test</p>
+
+<!-- multiple css classes -->
+<p [class]= "multipleClasses">Multiple class binding test</p>
+
+<!-- style binding -->
+<p [style]= "multipleStyles">Style Binding test</p>
+
+<!-- event binding -->
+<button class="time_btn" (click)= "setTimeNow()">Set Time to Now</button>
+<p>Time now: {{timeNow}}</p>
+
+<!-- template variables -->
+<input #color placeholder="type your color">
+<button (click)="setTextColor(color.value)">Set Color</button>
+<p [style.color]="pColor">Sample Text</p>
+
+<!-- two way data binding -->
+<input [(ngModel)]="randomText">
+<p>{{randomText}}</p>

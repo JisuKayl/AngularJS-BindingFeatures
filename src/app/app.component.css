@@ -1,0 +1,21 @@
+h1, h2, p{
+    text-align: center;
+}
+
+.nature_img, .sample_btn, .time_btn, input, button{
+    display: block;
+    margin: 0 auto;
+    margin-block: 1em;
+}
+
+.sample{
+    background-color: aqua;
+}
+
+.frcolor{
+    color: red;
+}
+
+.bgcolor{
+    background-color: chocolate;
+}
